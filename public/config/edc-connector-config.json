@@ -1,20 +1,32 @@
 [
   {
     "connectorName": "Consumer",
-    "managementUrl": "http://cp-consumer.dataspace/management",
-    "defaultUrl": "http://cp-consumer.dataspace/api",
-    "protocolUrl": "http://cp-consumer.dataspace/protocol",
+    "managementUrl": "http://localhost:9081/api/management",
+    "defaultUrl": "http://localhost:9080/api",
+    "protocolUrl": "http://localhost:9082/api/dsp",
     "federatedCatalogEnabled": false,
     "federatedCatalogUrl": "http://fc-consumer.dataspace/catalog",
-    "did": "did:web:ih-consumer.dataspace"
+    "did": "did:web:consumer-identityhub:7083",
+    "apiKey": "password"
   },
   {
-    "connectorName": "Provider",
-    "managementUrl": "http://cp-provider.dataspace/management",
-    "defaultUrl": "http://cp-provider.dataspace/api",
-    "protocolUrl": "http://cp-provider.dataspace/protocol",
+    "connectorName": "Provider-qna",
+    "managementUrl": "http://localhost:8191/api/management",
+    "defaultUrl": "http://localhost:8190/api",
+    "protocolUrl": "http://localhost:8192/api/dsp",
     "federatedCatalogEnabled": false,
     "federatedCatalogUrl": "http://fc-provider.dataspace/catalog",
-    "did": "did:web:ih-provider.dataspace"
+    "did": "did:web:consumer-identityhub:7093",
+    "apiKey": "password"
+  },
+  {
+    "connectorName": "Provider-manufacturing",
+    "managementUrl": "http://localhost:8291/api/management",
+    "defaultUrl": "http://localhost:8290/api",
+    "protocolUrl": "http://localhost:8292/api/dsp",
+    "federatedCatalogEnabled": false,
+    "federatedCatalogUrl": "http://fc-provider.dataspace/catalog",
+    "did": "did:web:consumer-identityhub:7093",
+    "apiKey": "password"
   }
 ]
